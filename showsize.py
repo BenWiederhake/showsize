@@ -26,6 +26,12 @@ def human_readable(size_bytes):
     if size_bytes >= 1024:  # EiB
         size_bytes /= 1024
         power += 1
+    if size_bytes >= 1024:  # ZiB
+        size_bytes /= 1024
+        power += 1
+    if size_bytes >= 1024:  # YiB
+        size_bytes /= 1024
+        power += 1
     return str(size_bytes) + " " + PREFIXES[power] + "B"
 
 
