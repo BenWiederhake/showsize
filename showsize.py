@@ -3,7 +3,7 @@
 import os
 
 
-PREFIXES = " Ki Mi Gi Ti Pi Ei".split(" ")
+PREFIXES = " Ki Mi Gi Ti Pi Ei Zi Yi ".split(" ")
 
 
 def human_readable(size_bytes):
